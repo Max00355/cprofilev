@@ -35,6 +35,12 @@ STATS_TEMPLATE = """\
 <html>
     <head>
         <title>{{ title }} | cProfile Results</title>
+        <script>
+            setInterval(function() {
+                    window.location.reload();
+                    }, 1000);
+                
+        </script>
     </head>
     <body>
         <pre>{{ !stats }}</pre>
